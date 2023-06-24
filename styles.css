@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+nav {
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    background-color: black;
+    height: 65px;
+    color: white;
+}
+
+nav ul li {
+    padding: 0 12px;
+    cursor: pointer;
+}
+
+.brand img {
+    width: 44px;
+    padding: 0 8px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+.container {
+    height: 70vh;
+    background-color: black;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin: 20px auto;
+    width: 70%;
+    border-radius: 10px;
+    padding: 15px;
+    background-image: url('bg.jpg');
+}
+
+.bottom {
+    background-color: black;
+    position: sticky;
+    color: white;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icons {
+    margin: 12px;
+}
+
+.icons i {
+    cursor: pointer;
+}
+
+#ProgressBar {
+    width: 80vw;
+    cursor: pointer;
+}
+
+.about {
+    height: 70vh;
+    background-color: black;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin: 20px auto;
+    width: 70%;
+    border-radius: 5px;
+    padding: 15px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.7rem;
+}
+
+.welcome {
+    padding: 5px;
+    font-weight: bolder;
+}
+
+.songItem {
+    height: 50px;
+    display: flex;
+    background-color: white;
+    width: 60%;
+    color: black;
+    margin: 12px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px;
+    padding-right: 10px;
+    border-radius: 10px;
+}
+
+.timestamp {
+    padding: 10px;
+}
+
+.play {
+    cursor: pointer;
+}
+
+.songItem img {
+    width: 43px;
+    margin: 0 23px;
+    border-radius: 35px;
+}
+.songList{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.songListContainer{
+    margin-top: 20px;
+}
+.songInfo{
+    position: absolute;
+    left: 18vh;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+}
